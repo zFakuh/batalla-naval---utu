@@ -9,7 +9,7 @@ public class Tablero {
             }
         }
     }
-
+//
     public void mostrarTablero() {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
