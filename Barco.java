@@ -9,7 +9,7 @@ public class Barco {
 
     public void recibirImpacto() {
         impactos++;
-        System.out.println("¡Impacto recibido! Total impactos: " + impactos);
+        System.out.println("Ataque recibido. Total de impactos: " + impactos);
     }
 
     public boolean estaHundido() {
