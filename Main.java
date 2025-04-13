@@ -20,24 +20,24 @@ public class Main {
         Jugador defensor = jugador2;
 
         while (!juegoTerminado) {
-            System.out.println(atacante.getNombre() + ", es tu turno.");
+            System.out.println("Es el turno de " + atacante.getNombre());
             defensor.getTablero().mostrarTablero();
 
-            System.out.print("Ingresá fila: ");
+            System.out.print("Ingresa la fila: ");
             int fila = input.nextInt();
 
-            System.out.print("Ingresá columna: ");
+            System.out.print("Ingresa la columna: ");
             int columna = input.nextInt();
 
             boolean acierto = defensor.recibirDisparo(fila, columna);
             if (acierto) {
-                System.out.println("¡Le diste a un barco!");
+                System.out.println("Le pegaste al barco");
             } else {
                 System.out.println("Agua.");
             }
 
             if (defensor.todosLosBarcosHundidos()) {
-                System.out.println(atacante.getNombre() + " gana");
+               System.out.println("Ganó " + atacante.getNombre());
                 juegoTerminado = true;
             } else {
                 Jugador temp = atacante;
